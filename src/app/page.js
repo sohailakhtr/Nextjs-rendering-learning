@@ -2,8 +2,11 @@ import axios from "axios";
 import Link from "next/link";
 import Counter from "@/components/counter";
 export default async function Home() {
+  // await new Promise((resolve) => setTimeout(resolve, 3000));
+
   const employees = await axios("http://localhost:3004/employees");
   // console.log(Employee.data);
+
   const showEmployees = employees.data.map((employee) => (
     <div key={employee.id} className="col">
       <div className="card">

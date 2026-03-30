@@ -8,7 +8,8 @@ export async function counterTrigger() {
 }
 
 export async function addEmployee(prevState, formdata) {
-  // await new Promise((resolve) => setTimeout(resolve, 2000));
+  // await new Promise((resolve) => setTimeout(resolve, 3000));
+
   console.log(prevState);
   try {
     if (formdata.get("fullname") === "") {
