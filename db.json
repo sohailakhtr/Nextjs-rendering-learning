@@ -4,25 +4,68 @@
       "fullname": "Martin short",
       "position": "Manager",
       "age": 80,
-      "id": 1
+      "id": "1"
     },
     {
       "fullname": "Francis Jones",
       "position": "VIP",
       "age": "65",
-      "id": 2
+      "id": "2"
     },
     {
       "fullname": "Marcus Morris",
       "position": "Developer",
       "age": "33",
-      "id": 3
+      "id": "3"
     },
     {
       "fullname": "Mary Thompson",
       "position": "Designer",
       "age": "45",
-      "id": 4
+      "id": "4"
+    },
+    {
+      "fullname": "sohail",
+      "position": "student",
+      "age": "25",
+      "id": "rnVx1NJ29LE"
+    },
+    {
+      "fullname": "M.Islam",
+      "position": "student",
+      "age": "21",
+      "id": "WPWuzKq7h50"
+    },
+    {
+      "fullname": "Martin short",
+      "position": "Team Lead",
+      "age": "45",
+      "id": "6KZwHVfr_UI"
+    },
+    {
+      "fullname": "Sale Manager",
+      "position": "Manager",
+      "age": "45",
+      "id": "a8Yxj0aQrIY"
+    },
+    {
+      "fullname": "222Martin short",
+      "position": "Team Lead",
+      "age": "22",
+      "id": "6lT8JRl5rtg"
+    },
+    {
+      "fullname": "222Martin short",
+      "position": "Team Lead",
+      "age": "22",
+      "id": "ULSboBIp9J4"
+    },
+    {
+      "fullname": "Mary Thompson",
+      "position": "friend",
+      "age": "80",
+      "id": "z0ByYJGzgQQ"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
