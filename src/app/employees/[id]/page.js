@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 async function getEmployee(ID) {
@@ -24,6 +25,7 @@ export default async function EmployeesByID({ params }) {
         <h4>Position:{employee.position}</h4>
         <h4>Age:{employee.age}</h4>
       </div>
+      <Link href={`/form/edit/${employee.id}`}>Edit Employee</Link>
     </>
   );
 }
