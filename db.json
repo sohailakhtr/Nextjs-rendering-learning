@@ -3,19 +3,13 @@
     {
       "fullname": "Martin short",
       "position": "Manager",
-      "age": 80,
+      "age": "33",
       "id": "1"
-    },
-    {
-      "fullname": "Francis Jones",
-      "position": "VIP",
-      "age": "65",
-      "id": "2"
     },
     {
       "fullname": "Marcus Morris",
       "position": "Developer",
-      "age": "33",
+      "age": "3",
       "id": "3"
     },
     {

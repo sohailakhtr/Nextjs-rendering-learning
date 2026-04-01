@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import EditFrom from "@/components/edit_form";
 async function getEmployee(ID) {
   const res = await fetch(`http://localhost:3004/employees/${ID}`);
@@ -11,8 +11,8 @@ async function getEmployee(ID) {
 
 export default async function EditPage({ params }) {
   const ID = (await params).id;
-  const employee = getEmployee(ID);
-  console.log(employee);
+  const employee = await getEmployee(ID);
+  // console.log(employee);
 
   return (
     <>

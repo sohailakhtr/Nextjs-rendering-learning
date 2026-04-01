@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { deleteEmployee } from "@/helpers/actions";
 
 async function getEmployee(ID) {
   const res = await fetch(`http://localhost:3004/employees/${ID}`);
@@ -13,6 +14,7 @@ async function getEmployee(ID) {
 export default async function EmployeesByID({ params }) {
   const ID = (await params).id;
   const employee = await getEmployee(ID);
+  const deleteAction = deleteEmployee.bind(null,ID);
 
   // const employee = await axios.get(`http://localhost:3004/employees/${ID}`);
 
@@ -26,6 +28,11 @@ export default async function EmployeesByID({ params }) {
         <h4>Age:{employee.age}</h4>
       </div>
       <Link href={`/form/edit/${employee.id}`}>Edit Employee</Link>
+
+      <hr />
+      <form action={deleteAction}>
+        <button type="submit">Delete user</button>
+      </form>
     </>
   );
 }
