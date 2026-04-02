@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { deleteEmployee } from "@/helpers/actions";
 
+// export const dynamic = "foce-static";
+
 async function getEmployee(ID) {
   const res = await fetch(`http://localhost:3004/employees/${ID}`);
   if (!res.ok) {
