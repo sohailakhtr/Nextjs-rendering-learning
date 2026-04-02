@@ -37,28 +37,22 @@
       "id": "6KZwHVfr_UI"
     },
     {
-      "fullname": "Sale Manager",
-      "position": "Manager",
-      "age": "45",
-      "id": "a8Yxj0aQrIY"
-    },
-    {
-      "fullname": "222Martin short",
-      "position": "Team Lead",
-      "age": "22",
-      "id": "6lT8JRl5rtg"
-    },
-    {
-      "fullname": "222Martin short",
-      "position": "Team Lead",
-      "age": "22",
-      "id": "ULSboBIp9J4"
-    },
-    {
       "fullname": "Mary Thompson",
       "position": "friend",
       "age": "80",
       "id": "z0ByYJGzgQQ"
+    },
+    {
+      "fullname": "Hamza ",
+      "position": "DEv",
+      "age": "",
+      "id": "qwgQvrOZz3Y"
+    },
+    {
+      "fullname": "Hamza ",
+      "position": "Developer",
+      "age": "22",
+      "id": "pAW6Ze7fwoM"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

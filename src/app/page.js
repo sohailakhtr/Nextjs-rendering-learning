@@ -23,7 +23,7 @@ export default async function Home() {
           <h3 className="card-title">{employee.fullname}</h3>
           <p className="card-text">{employee.position}</p>
           <p className="card-text">{employee.age}</p>
-          <Link href={`/employees/${employee.id}`} className="btn btn-primary">
+          <Link href={`/employees/${employee.id}`} className="btn btn-info">
             Go to employee
           </Link>
         </div>

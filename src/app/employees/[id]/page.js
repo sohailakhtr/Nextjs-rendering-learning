@@ -14,7 +14,7 @@ async function getEmployee(ID) {
 export default async function EmployeesByID({ params }) {
   const ID = (await params).id;
   const employee = await getEmployee(ID);
-  const deleteAction = deleteEmployee.bind(null,ID);
+  const deleteAction = deleteEmployee.bind(null, ID);
 
   // const employee = await axios.get(`http://localhost:3004/employees/${ID}`);
 
@@ -27,11 +27,15 @@ export default async function EmployeesByID({ params }) {
         <h4>Position:{employee.position}</h4>
         <h4>Age:{employee.age}</h4>
       </div>
-      <Link href={`/form/edit/${employee.id}`}>Edit Employee</Link>
+      <Link href={`/form/edit/${employee.id}`} className="btn btn-info ">
+        Edit Employee
+      </Link>
 
       <hr />
       <form action={deleteAction}>
-        <button type="submit">Delete user</button>
+        <button type="submit" className="btn btn-danger">
+          Delete user
+        </button>
       </form>
     </>
   );

@@ -82,7 +82,7 @@ export default function EditForm({ employee }) {
           </div>
         ) : null}
 
-        <button type="submit" className="btn btn-primary mb-3">
+        <button type="submit" className="btn btn-info mb-3">
           Edit employee
         </button>
 

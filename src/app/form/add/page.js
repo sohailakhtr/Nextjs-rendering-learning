@@ -31,7 +31,7 @@ export default function AddPage() {
           name="age"
         />
 
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-info">
           Add empoyee
         </button>
       </form>
