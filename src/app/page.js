@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Counter from "@/components/counter";
 
+
 async function getEmployee() {
   const res = await fetch("http://localhost:3004/employees");
   if (!res.ok) {
