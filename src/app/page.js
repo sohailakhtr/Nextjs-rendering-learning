@@ -1,12 +1,36 @@
 import Link from "next/link";
 import Counter from "@/components/counter";
 import { cache } from "react";
-import { revalidatePath } from "next/cache";
+// import { revalidatePath } from "next/cache";
+import { headers, cookies } from "next/headers";
 
 async function getEmployee() {
-  const res = await fetch(`http://localhost:3004/employees`, {
-    next: { revalidatePath: 5 },
-  });
+  const cookieStore = await cookies();
+  // console.log(cookieStore.get("some-cookie"));
+
+  // console.log(cookieStore.getAll().map((cookie) => {return cookie;}));
+
+  // console.log(cookieStore.has("some-cookie"));
+
+  // cookieStore.set("name", "value", { secure: true });
+
+  // cookieStore.delete("sone-cookie");
+
+  // const headerList = await headers();
+  // const userAuth = headerList.get("userAuth");
+  // const userAuth = headerList.entries();
+
+  // headerList.forEach((value, key) => {
+  //   console.log(value, "=", key);
+  // });
+
+  // const hasHeaders = headerList.has("Content-type");
+  // console.log(headerList.keys());
+  // console.log(headerList.values());
+
+  const res = await fetch(`http://localhost:3004/employees`);
+  // using fetch option  {// next: { revalidatePath: 5 } }
+
   if (!res.ok) {
     throw new Error("Could not find Employee");
   }
