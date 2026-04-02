@@ -1,6 +1,6 @@
 "use server";
 import axios from "axios";
-import { revalidatePath } from "next/cache";
+// import { revalidatePath } from "next/cache";
 import { redirect } from "next/navigation";
 
 export async function counterTrigger() {
@@ -22,7 +22,7 @@ export async function addEmployee(prevState, formdata) {
       age: formdata.get("age"),
     });
 
-    revalidatePath("/");
+    // revalidatePath("/");
 
     return { success: true, message: "Name added" };
   } catch (e) {
@@ -54,8 +54,8 @@ export async function editEmployee(formdata) {
   } catch (error) {
     return { error: error };
   }
-  revalidatePath(`/employess/${formdata.id}`);
-  revalidatePath("/");
+  // revalidatePath(`/employess/${formdata.id}`);
+  // revalidatePath("/");
 
   redirect("/");
 }
@@ -64,6 +64,6 @@ export async function deleteEmployee(ID) {
   await fetch(`http://localhost:3004/employees/${ID}`, {
     method: "DELETE",
   });
-  revalidatePath("/");
+  // revalidatePath("/");
   redirect("/");
 }

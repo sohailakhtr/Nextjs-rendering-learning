@@ -1,9 +1,12 @@
 import Link from "next/link";
 import Counter from "@/components/counter";
-
+import { cache } from "react";
+import { revalidatePath } from "next/cache";
 
 async function getEmployee() {
-  const res = await fetch("http://localhost:3004/employees");
+  const res = await fetch(`http://localhost:3004/employees`, {
+    next: { revalidatePath: 5 },
+  });
   if (!res.ok) {
     throw new Error("Could not find Employee");
   }
