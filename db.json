@@ -35,6 +35,12 @@
       "position": "Crew ",
       "age": "12",
       "id": "aYS4aQ87acs"
+    },
+    {
+      "fullname": "sohail",
+      "position": "Manager",
+      "age": "25",
+      "id": "GCJgjCHwqQI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
