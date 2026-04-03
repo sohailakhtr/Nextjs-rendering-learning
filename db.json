@@ -41,6 +41,12 @@
       "position": "Football Player",
       "age": "50",
       "id": "kNLZooR4FNk"
+    },
+    {
+      "fullname": "Martin short",
+      "position": "Manager",
+      "age": "33",
+      "id": "Tb-a8Vjhdhc"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
