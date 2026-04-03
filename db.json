@@ -47,6 +47,12 @@
       "position": "Manager",
       "age": "33",
       "id": "Tb-a8Vjhdhc"
+    },
+    {
+      "fullname": "pushpaRaj",
+      "position": "old year ",
+      "age": "100",
+      "id": "D_9syZ-DzWA"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
